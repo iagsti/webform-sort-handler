@@ -1,0 +1,6 @@
+templates
+composer.json
+phpunit.xml
+tests/
+vendor/
+

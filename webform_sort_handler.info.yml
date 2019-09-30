@@ -1,0 +1,7 @@
+name: 'Webform Sort Handler'
+type: module
+description: 'A Webform handler for sorting webfom submission data'
+core: 8.x
+package: 'Webform'
+dependencies:
+  - webform

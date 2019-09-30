@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Contains webform_sort_handler.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function webform_sort_handler_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the webform_sort_handler module.
+    case 'help.page.webform_sort_handler':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('A Webform handler for sorting webfom submission data') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function webform_sort_handler_theme() {
+  return [
+    'webform_handler_webform_sort_handler_summary' => [
+      'variables' => ['settings' => NULL, 'handler' => NULL],
+    ],
+  ];
+}
+
+
+
